@@ -1,0 +1,24 @@
+# Terraform MCP + Gemini Integration Requirements
+
+# MCP (Model Context Protocol) client
+mcp>=1.0.0
+
+# Google Gemini AI
+google-generativeai>=0.3.0
+
+# Web Framework
+flask>=3.0.0          # Web server framework
+werkzeug>=3.0.0       # WSGI utilities
+
+# AWS SDK (for AWS resource management)
+boto3>=1.26.0         # AWS SDK for Python
+
+# Additional utilities for enhanced functionality
+aiohttp>=3.8.0        # For HTTP client operations
+asyncio>=3.4.3        # For async operations (usually built-in)
+dataclasses>=0.6      # For configuration management (Python 3.7+)
+pathlib>=1.0.1        # For path operations (usually built-in)
+
+# Development and testing
+pytest>=7.0.0         # For testing
+pytest-asyncio>=0.21.0  # For async testing

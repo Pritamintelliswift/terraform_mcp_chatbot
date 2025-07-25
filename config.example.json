@@ -1,0 +1,25 @@
+{
+  "gemini": {
+    "api_key": "YOUR_GEMINI_API_KEY_HERE",
+    "model_name": "gemini-1.5-flash",
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "safety_settings": {
+      "HARM_CATEGORY_HARASSMENT": "BLOCK_MEDIUM_AND_ABOVE",
+      "HARM_CATEGORY_HATE_SPEECH": "BLOCK_MEDIUM_AND_ABOVE",
+      "HARM_CATEGORY_SEXUALLY_EXPLICIT": "BLOCK_MEDIUM_AND_ABOVE",
+      "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_MEDIUM_AND_ABOVE"
+    }
+  },
+  "mcp_server": {
+    "server_path": "./terraform-mcp-server.exe",
+    "server_args": ["stdio"],
+    "timeout": 30,
+    "retry_attempts": 3,
+    "log_level": "INFO"
+  },
+  "conversation_history_limit": 50,
+  "enable_analytics": true,
+  "log_file": "terraform_gemini.log",
+  "config_file": "terraform_gemini_config.json"
+}
